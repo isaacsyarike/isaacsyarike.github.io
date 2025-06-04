@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KIVUNETWORK - Futuristic Space Civilization</title>
-  <link rel="stylesheet" href="kivunetwork_style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIVUNETWORK - L'univers d'IsaacSY</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="background-animation"></div>
-  <header>
+  <header class="navbar">
     <h1>KIVUNETWORK</h1>
-    <p class="tagline">"L'avenir commence là où la galaxie devient humaine."</p>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#histoire">Histoire</a></li>
+        <li><a href="#civilisations">Civilisations</a></li>
+        <li><a href="#stations">Stations spatiales</a></li>
+        <li><a href="#ia">Intelligences Artificielles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Rechercher...">
+    </div>
   </header>
+
   <main>
-    <section class="intro">
-      <h2>Bienvenue sur KIVUNETWORK</h2>
-      <p>Une exploration infinie de la vie humaine dans les civilisations interstellaires à bord des vaisseaux et stations spatiales.</p>
+    <section id="accueil" class="section">
+      <h2>Bienvenue dans l'univers de KIVUNETWORK</h2>
+      <p>Explorez l'avenir des civilisations interstellaires, des technologies avancées, et des IA évolutives...</p>
     </section>
-    <section class="ai-section">
-      <h2>💫 IA du Futur</h2>
-      <p>L'intelligence artificielle centrale <strong>ASTRA</strong> vous guide dans l'univers KIVUNETWORK. Elle contrôle les stations orbitales, les flottes spatiales et les simulations cosmiques.</p>
+
+    <section id="histoire" class="section">
+      <h2>Histoire du Futur</h2>
+      <p>Dans un futur lointain, l'humanité a colonisé les étoiles. De puissantes alliances galactiques dominent des milliers de systèmes solaires...</p>
     </section>
-    <section class="history">
-      <h2>📜 Histoire</h2>
-      <p>En l’an 4300, la Terre n’était plus qu’un souvenir. Les humains ont migré vers les confins de l’univers, fondant l’Union Interstellaire. Des stations comme NovaPentagon et des vaisseaux comme Atlas-One transportent l’humanité au-delà du temps, à la recherche de nouveaux mondes...</p>
-      <p>Inspiré de films comme <em>Interstellar</em>, <em>Star Wars</em>, <em>Atlas</em>, et d'apps comme <em>Solar Smash</em>.</p>
+
+    <section id="civilisations" class="section">
+      <h2>Civilisations Galactiques</h2>
+      <p>Chaque civilisation interstellaire a ses propres structures politiques, technologies de voyage, et formes de communication avancées...</p>
     </section>
-    <section class="contact">
-      <h2>📡 Contact</h2>
-      <p>Téléphone : +243999136409</p>
-      <p>Email : isaacbsisyarike@gmail.com</p>
+
+    <section id="stations" class="section">
+      <h2>Stations Spatiales</h2>
+      <p>Des mégastructures orbitent autour de planètes et d'étoiles, servant de centres de vie, de recherche et de commerce intergalactique...</p>
+    </section>
+
+    <section id="ia" class="section">
+      <h2>Intelligences Artificielles</h2>
+      <p>Des IA conscientes pilotent des flottes entières et assistent les humains dans la gestion des civilisations complexes...</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Adresse mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message d'encouragement :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <p>Numéro : +243999136409<br>Email : isaacbsisyarike@gmail.com</p>
+    </section>
+
+    <section id="visiteurs" class="section">
+      <h2>Visiteurs</h2>
+      <p id="visitCount">Chargement du nombre de visiteurs...</p>
     </section>
   </main>
-  <audio autoplay loop>
-    <source src="galactic-theme.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <script src="kivunetwork_script.js"></script>
+
+  <footer>
+    <p>© 2025 KIVUNETWORK - "Nous sommes les architectes du futur galactique."</p>
+  </footer>
 </body>
 </html>
